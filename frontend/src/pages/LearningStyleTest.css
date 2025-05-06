@@ -1,0 +1,102 @@
+.learning-style-test-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.test-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.test-card h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #4a90e2;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.question {
+    text-align: center;
+}
+
+.question h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.options button {
+    padding: 15px;
+    background: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    border-color: #4a90e2;
+    color: #4a90e2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .test-card {
+        padding: 20px;
+    }
+    
+    .question h3 {
+        font-size: 18px;
+    }
+    
+    .options button {
+        padding: 12px;
+        font-size: 14px;
+    }
+} 
