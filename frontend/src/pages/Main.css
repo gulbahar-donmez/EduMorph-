@@ -1,0 +1,76 @@
+.main-container {
+    height: 100vh;
+    background: url('../images/1.png') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.main-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.main-card h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.main-card p {
+    color: #4a5568;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.main-card button {
+    margin: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6c63ff, #4a90e2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    .main-card {
+        padding: 20px;
+    }
+
+    .main-card h1 {
+        font-size: 2rem;
+    }
+
+    .main-card p {
+        font-size: 1rem;
+    }
+
+    .main-card button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+  
